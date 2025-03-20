@@ -9,25 +9,29 @@ Este repositorio contiene el código y la documentación relacionados con el pro
 
 El objetivo de este proyecto es limpiar y procesar un conjunto de datos que incluye valores numéricos (continuos y discretos), datos de texto y datos categóricos. El proceso incluye la identificación y tratamiento de valores nulos, corrección de errores e inconsistencias, y la preparación de los datos para su análisis posterior.
 
+
 ---
 
-## Estructura del Repositorio
+## Herramientas y Tecnologías Utilizadas
 
-El repositorio está organizado de la siguiente manera:
+- **Lenguaje de programación**: Python
+- **Librerías principales**:
+  - Pandas: Para la manipulación y análisis de datos.
+  - OCR (Reconocimiento Óptico de Caracteres): Para procesar datos de imágenes o documentos escaneados.
+- **Software adicional**: Excel (para revisión manual de datos).
 
-/proyecto-limpieza-datos/
-│
-├── /data/ # Carpeta que contiene los datos originales y procesados
-│ ├── datos_originales.csv
-│ └── datos_procesados.csv
-│
-├── /notebooks/ # Jupyter Notebooks con el código de limpieza y procesamiento
-│ └── limpieza_procesamiento.ipynb
-│
-├── /docs/ # Documentación del proyecto
-│ └── avance2_limpieza_procesamiento.pdf
-│
-├── README.md # Este archivo
-└── requirements.txt # Dependencias necesarias para ejecutar el código
+---
 
+## Proceso de Limpieza y Procesamiento
 
+### 1. Limpieza de Datos
+- **Identificación de valores nulos**: Se utilizaron herramientas como Pandas para detectar valores faltantes. La mayoría de los datos nulos o inconsistentes se revisaron manualmente.
+- **Corrección de errores**: Se implementó un algoritmo en Python para corregir nombres de equipos mal escritos en la columna `EQUIPO`.
+- **Uso de OCR**: Para procesar datos provenientes de fuentes no digitalizadas.
+
+### 2. Procesamiento de Datos
+- No se aplicaron técnicas de normalización o transformación, pero se aseguró que los datos estuvieran correctamente estructurados y libres de errores.
+
+---
+Referencias
+Liga de Fútbol Profesional. (n.d.). Estadísticas Avanzadas. Recuperado de https://www.laliga.com/estadisticas-avanzadas.
